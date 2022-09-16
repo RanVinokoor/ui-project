@@ -1,38 +1,421 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #f2f4f7;
+  padding-top: 91px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.deal-warpper {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+  height: 176px;
+  max-width: 1024px;
+  border-radius: 12px;
+  margin: auto;
+  padding: 17px 17px 0;
+  box-shadow: 0px 51px 114px #c7c7c726, 0px 15.375px 34.3677px #c7c7c717, 0px 6.38599px 14.2746px #c7c7c710, 0px 2.30969px 5.16283px #c7c7c709;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.deal-label {
+  position: absolute;
+  background-color: #d4eaff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 140px;
+  height: 32px;
+  top: -17px;
+  left: -7px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.deal-label-img {
+  position: absolute;
+  top: 32px;
+  left: 0;
+}
+
+.deal-label-content {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px 0 11px;
+}
+
+.deal-label-content-icon {
+  width: 14px;
+  height: 18px;
+}
+
+.deal-label-content-icon:nth-child(2) {
+  display: none;
+}
+
+.deal-label-content-text {
+  color: #0b76e0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.deal-content {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.deal-content-num {
+  color: #55626e40;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 80px;
+  width: 80px;
+}
+
+.deal-content-details {
+  display: flex;
+  gap: 33px;
+}
+
+.deal-content-details-img {
+  max-width: 202px;
+  height: auto;
+}
+
+.deal-content-details-text-product {
+  color: #55626e;
+  font-weight: 600;
+  font-size: 16px;
+  max-width: 245px;
+  text-align: left;
+}
+
+.deal-content-details-text-brand {
+  color: #626e79;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 6px 0 15px;
+}
+
+.deal-content-details-text-discount {
+  color: #fff;
+  background-color: #55a0ea;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.2px;
+  width: max-content;
+}
+
+.deal-content-rating.desktop {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.deal-content-rating.mobile {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.deal-content-rating-num {
+  position: relative;
+  width: max-content;
+  color: #55626e;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.deal-content-rating-num-icon {
+  position: absolute;
+  right: -9px;
+  top: 3px;
+  width: 12px;
+  height: 12px;
+}
+
+.deal-content-actions {
+  margin: 24px 0 0 0;
+}
+
+.deal-content-actions-btn {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #0b76e0;
+  border-radius: 12px;
+  width: 246px;
+  height: 44px;
+  border: none;
+}
+
+.deal-content-actions-more {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 21px;
+}
+
+.deal-content-actions-more-store {
+  color: #626e79;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.deal-content-actions-more-dropdown {
+  color: #55626e;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.deal-content-actions-more-dropdown-icon {
+  padding-left: 5px;
+}
+
+.tablet {
+  display: none;
+}
+
+/* ------------------------------- Tablet ------------------------------- */
+@media only screen and (max-width:1074px) {
+  .deal-warpper {
+    max-width: 100%;
+    height: 132px;
+    justify-content: center;
+    margin: 0 24px;
+    padding: 8px 17px 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .deal-label {
+    width: 104px;
+  }
+
+  .deal-label-content {
+    gap: 7px;
+    padding: 0 0 0 11px;
+  }
+
+  .deal-label-content-icon {
+    width: 10px;
+    height: 13px;
+  }
+
+  .deal-label-content-text {
+    font-size: 12px;
+  }
+
+  .deal-content {
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 17px;
+  }
+
+  .deal-content-num {
+    position: absolute;
+    font-size: 50px;
+    right: 16px;
+    top: -33px;
+    width: unset;
+  }
+
+  .deal-content-details {
+    align-items: center;
+    gap: 25px;
+  }
+
+  .deal-content-details-img {
+    max-width: 14vw;
+    min-width: 118px;
+  }
+
+  .deal-content-details-text-product {
+    font-size: 14px;
+  }
+
+  .deal-content-details-text-brand {
+    font-size: 12px;
+  }
+
+  .deal-content-details-text-discount {
+    display: none;
+  }
+
+  .deal-content-actions-more {
+    justify-content: center;
+    margin-top: 13px;
+  }
+
+  .deal-content-actions-more-store {
+    font-size: 12px;
+  }
+
+  .deal-content-actions-more-dropdown {
+    display: none;
+    font-size: 12px;
+  }
+
+  .deal-content-rating-num {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+
+  .deal-content-rating-num-icon {
+    right: -9px;
+    top: 0;
+    width: 9px;
+    height: 9px;
+  }
+
+  .deal-content-actions-btn {
+    font-size: 14px;
+    width: 171px;
+    height: 36px;
+  }
+
+  .tablet {
+    display: block;
+  }
+}
+
+/* ------------------------------- Mobile ------------------------------- */
+@media only screen and (max-width:720px) {
+  .deal-warpper {
+    height: unset;
+    margin: 0 20px;
+    padding: 36px 20px 20px;
+  }
+
+  .deal-label {
+    background-color: #ff5c00;
+    width: 140px;
+  }
+
+  .deal-label-content {
+    padding: 0 0 0 16px;
+  }
+
+  .deal-label-content-icon:nth-child(1) {
+    display: none;
+  }
+
+  .deal-label-content-icon:nth-child(2) {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  .deal-label-content-text {
+    color: #fff;
+    font-size: 16px;
+    height: 23px;
+  }
+
+  .deal-content {
+    flex-direction: column;
+  }
+
+  .deal-content-num {
+    font-size: 64px;
+    top: -47px;
+  }
+
+  .deal-content-details {
+    flex-direction: column;
+    width: 100%;
+    gap: 13px;
+  }
+
+  .deal-content-details-img-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    margin-left: 64px;
+  }
+
+  .deal-content-details-img {
+    width: 160px;
+    max-width: unset;
+    min-width: unset;
+  }
+
+  .deal-content-details-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .deal-content-details-text-product {
+    order: 3;
+    max-width: 300px;
+    margin-top: 5px;
+  }
+
+  .deal-content-details-text-brand {
+    text-align: center;
+    font-size: 14px;
+    padding: 0 0 10px;
+  }
+
+  .deal-content-details-text-discount {
+    display: block;
+    font-size: 12px;
+    order: 2;
+  }
+
+  .deal-content-rating.desktop {
+    display: none;
+  }
+
+  .deal-content-rating.mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .deal-content-rating-num {
+    font-size: 24px;
+  }
+
+  .deal-content-rating-icon {
+    width: 48px;
+  }
+
+  .deal-content-actions {
+    width: 100%;
+    max-width: 300px;
+    margin: 6px 0 0 0;
+  }
+
+  .deal-content-actions-btn {
+    font-size: 16px;
+    width: 100%;
+    height: 42px;
+  }
+
+  .deal-content-actions-more {
+    justify-content: unset;
+    margin-top: 17px;
+  }
+
+  .deal-content-actions-more-store {
+    font-size: 14px;
+  }
+
+  .deal-content-actions-more-dropdown {
+    display: none;
+  }
+}
+
+/* ---------------------------- Mobile small ---------------------------- */
+@media only screen and (max-width:340px) {
+  .deal-content-details-img {
+    max-width: 140px;
   }
 }
