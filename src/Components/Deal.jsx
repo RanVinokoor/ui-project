@@ -1,6 +1,5 @@
 import flame from '../Images/flame.svg';
 import trophy from '../Images/trophy.svg';
-import triangle from '../Images/triangle.svg';
 import product from '../Images/product.png';
 import info from '../Images/info.svg';
 import stars from '../Images/stars.svg';
@@ -16,7 +15,9 @@ export const Deal = () => {
                 <img className="deal-label-content-icon" src={trophy} alt="trophy" />
                 <p className='deal-label-content-text'>Best Value</p>
               </div>
-              <img className="deal-label-img" src={triangle} alt="triangle" />
+              <svg className="deal-label-img" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 7L0 0H7V7Z" fill="#99CDFF"/>
+              </svg>
             </div>
             <div className='deal-content'>
               <p className='deal-content-num'>01</p> 

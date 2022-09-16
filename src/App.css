@@ -311,6 +311,10 @@ body {
     padding: 0 0 0 13px;
   }
 
+  .deal-label-img path {
+    fill: #b04000;
+  }
+
   .deal-label-content-icon:nth-child(1) {
     display: none;
   }
