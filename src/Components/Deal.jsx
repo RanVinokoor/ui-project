@@ -8,7 +8,7 @@ import arrow from '../Images/arrow.svg';
 export const Deal = () => {
     return (
         <>
-          <div className="deal-warpper">
+          <div className="deal-wrapper">
             <div className="deal-label">
               <div className='deal-label-content'>
                 <img className="deal-label-content-icon" src={flame} alt="flame" />

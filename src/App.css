@@ -13,7 +13,7 @@ body {
   font-family: "Inter";
 }
 
-.deal-warpper {
+.deal-wrapper {
   position: relative;
   display: flex;
   background-color: #fff;
@@ -231,7 +231,7 @@ body {
     position: absolute;
     font-size: 50px;
     right: 16px;
-    top: -33px;
+    top: -27px;
     width: unset;
   }
 
@@ -337,7 +337,7 @@ body {
 
   .deal-content-num {
     font-size: 64px;
-    top: -47px;
+    top: -39px;
   }
 
   .deal-content-details {
