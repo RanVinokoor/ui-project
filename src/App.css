@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +10,7 @@
 body {
   background-color: #f2f4f7;
   padding-top: 91px;
+  font-family: "Inter";
 }
 
 .deal-warpper {
@@ -46,7 +49,7 @@ body {
   gap: 11px;
   align-items: center;
   width: 100%;
-  padding: 0 20px 0 11px;
+  padding: 0 20px 0 9px;
 }
 
 .deal-label-content-icon {
@@ -62,12 +65,13 @@ body {
   color: #0b76e0;
   font-weight: 600;
   font-size: 16px;
+  letter-spacing: 0.2px;
 }
 
 .deal-content {
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 33px;
 }
 
 .deal-content-num {
@@ -80,7 +84,7 @@ body {
 
 .deal-content-details {
   display: flex;
-  gap: 33px;
+  gap: 24px;
 }
 
 .deal-content-details-img {
@@ -92,8 +96,9 @@ body {
   color: #55626e;
   font-weight: 600;
   font-size: 16px;
-  max-width: 245px;
+  max-width: 269px;
   text-align: left;
+  letter-spacing: 0.2px;
 }
 
 .deal-content-details-text-brand {
@@ -101,6 +106,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   padding: 6px 0 15px;
+  letter-spacing: 0.2px;
 }
 
 .deal-content-details-text-discount {
@@ -108,7 +114,7 @@ body {
   background-color: #55a0ea;
   font-weight: 500;
   font-size: 14px;
-  padding: 2px 6px;
+  padding: 2px 4px;
   border-radius: 4px;
   letter-spacing: 0.2px;
   width: max-content;
@@ -136,7 +142,7 @@ body {
 .deal-content-rating-num-icon {
   position: absolute;
   right: -9px;
-  top: 3px;
+  top: -4px;
   width: 12px;
   height: 12px;
 }
@@ -154,6 +160,7 @@ body {
   width: 246px;
   height: 44px;
   border: none;
+  letter-spacing: 0.2px;
 }
 
 .deal-content-actions-more {
@@ -167,6 +174,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   text-decoration: none;
+  letter-spacing: 0.2px;
 }
 
 .deal-content-actions-more-dropdown {
@@ -174,6 +182,7 @@ body {
   font-weight: 600;
   font-size: 14px;
   text-decoration: none;
+  letter-spacing: 0.2px;
 }
 
 .deal-content-actions-more-dropdown-icon {
@@ -215,7 +224,7 @@ body {
   .deal-content {
     justify-content: space-evenly;
     width: 100%;
-    gap: 17px;
+    gap: 13px;
   }
 
   .deal-content-num {
@@ -228,7 +237,7 @@ body {
 
   .deal-content-details {
     align-items: center;
-    gap: 25px;
+    gap: 20px;
   }
 
   .deal-content-details-img {
@@ -238,6 +247,7 @@ body {
 
   .deal-content-details-text-product {
     font-size: 14px;
+    max-width: 264px;
   }
 
   .deal-content-details-text-brand {
@@ -269,7 +279,6 @@ body {
 
   .deal-content-rating-num-icon {
     right: -9px;
-    top: 0;
     width: 9px;
     height: 9px;
   }
@@ -299,7 +308,7 @@ body {
   }
 
   .deal-label-content {
-    padding: 0 0 0 16px;
+    padding: 0 0 0 13px;
   }
 
   .deal-label-content-icon:nth-child(1) {
@@ -381,6 +390,10 @@ body {
 
   .deal-content-rating-num {
     font-size: 24px;
+  }
+
+  .deal-content-rating-num-icon {
+    right: -6px;
   }
 
   .deal-content-rating-icon {
