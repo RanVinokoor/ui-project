@@ -195,7 +195,7 @@ body {
 
 /* ------------------------------- Tablet ------------------------------- */
 @media only screen and (max-width:1074px) {
-  .deal-warpper {
+  .deal-wrapper {
     max-width: 100%;
     height: 132px;
     justify-content: center;
@@ -296,7 +296,7 @@ body {
 
 /* ------------------------------- Mobile ------------------------------- */
 @media only screen and (max-width:720px) {
-  .deal-warpper {
+  .deal-wrapper {
     height: unset;
     margin: 0 20px;
     padding: 36px 20px 20px;
